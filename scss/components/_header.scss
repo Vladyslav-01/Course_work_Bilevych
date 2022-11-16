@@ -1,0 +1,32 @@
+body {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../../images/header-bg.png);
+    background-repeat: round;
+}
+
+.nav {
+    width: 100%;
+    padding: 0 7% 0 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: $white;
+
+    &__item {
+        font-family: $open-sans;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 18px;
+        padding-top: 3%;
+    }
+
+    &__logo {
+        padding-top: 2%;
+    }
+}
