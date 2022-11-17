@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300;500;700&family=Open+Sans:wght@300; 400; 700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/banny");
 html,
 body,
 div,
@@ -88,6 +89,10 @@ video {
   vertical-align: baseline;
 }
 
+a {
+  text-decoration: none;
+}
+
 article,
 aside,
 details,
@@ -116,7 +121,7 @@ ul {
 }
 
 body {
-  width: 100%;
+  min-width: 100%;
 }
 
 .header {
@@ -138,10 +143,47 @@ body {
 .nav__item {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-size: 12px;
+  font-size: 1.2em;
   line-height: 18px;
   padding-top: 3%;
 }
 .nav__logo {
   padding-top: 2%;
+  width: 10%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 10% 5% 4% 5%;
+}
+
+.hero-schedule {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.hero-center {
+  text-align: center;
+}
+.hero-center__name {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 2em;
+  letter-spacing: 0.5rem;
+}
+
+.hero-social {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+.hero-social__icon {
+  width: 100%;
+  padding: 6% 0;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */

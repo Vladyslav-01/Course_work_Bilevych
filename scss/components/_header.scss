@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    min-width: 100%;
 }
 
 .header {
@@ -21,12 +21,51 @@ body {
     &__item {
         font-family: $open-sans;
         font-style: normal;
-        font-size: 12px;
+        font-size: 1.2em;
         line-height: 18px;
         padding-top: 3%;
     }
 
     &__logo {
         padding-top: 2%;
+        width: 10%;
+    }
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    width: 100%;
+    padding: 10% 5% 4% 5%;
+}
+
+.hero-schedule {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+}
+
+.hero-center {
+    text-align: center;
+
+    &__name {
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3em;
+        line-height: 2em;
+        letter-spacing: 0.5rem;
+    }
+}
+
+.hero-social {
+    writing-mode: vertical-rl;
+
+    &__icon {
+        width: 100%;
+        padding: 6% 0;
+        border-radius: 50%;
     }
 }
