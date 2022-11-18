@@ -1,7 +1,6 @@
 .About {
     width: 100%;
     height: 40rem;
-    box-sizing: border-box;
     display: flex;
     padding: 5%;
 
@@ -42,9 +41,17 @@
         }
 
         &--sq {
-            width: 100%;
+            width: 40%;
             position: absolute;
-            right: -35%;
+            right: -9%;
+            padding-top: 28%;
         }
     }
+}
+
+.green {
+    background-color: aqua;
+    position: absolute;
+    width: 255px;
+    height: 257px;
 }
