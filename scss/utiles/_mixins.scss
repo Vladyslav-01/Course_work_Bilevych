@@ -1,5 +1,31 @@
 @mixin btn {
     background-color: $yellow;
     color: $white;
-    border-radius: 6%;
+    border-radius: 1em;
+}
+
+@mixin hr {
+    background-color: $yellow;
+    border: 0.2em solid $yellow;
+    border-radius: 1em;
+}
+
+@mixin h2 {
+    font-family: $banny;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@mixin p-solid {
+    font-family: $open-sans;
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 1.4em;
+}
+
+@mixin p {
+    font-family: $open-sans;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }

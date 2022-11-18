@@ -191,7 +191,7 @@ body {
 .hero-center__hr {
   background-color: #E8C300;
   border: 0.2em solid #E8C300;
-  border-radius: 15%;
+  border-radius: 1em;
   width: 8%;
 }
 .hero-center__wrapper {
@@ -205,7 +205,7 @@ body {
 .hero-center__btn-1 {
   background-color: #E8C300;
   color: #FFFFFF;
-  border-radius: 6%;
+  border-radius: 1em;
   width: 25%;
   height: 100%;
   line-height: 400%;
@@ -213,7 +213,7 @@ body {
 .hero-center__btn-2 {
   background-color: #E8C300;
   color: #FFFFFF;
-  border-radius: 6%;
+  border-radius: 1em;
   width: 25%;
   height: 100%;
   line-height: 400%;
@@ -237,4 +237,57 @@ body {
 .hero-social__icon {
   width: 70%;
   padding: 6% 0;
+}
+
+.About {
+  width: 100%;
+  height: 40rem;
+  box-sizing: border-box;
+  display: flex;
+  padding: 5%;
+}
+.About__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3%;
+}
+.About__h2 {
+  font-family: "banny", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.About__hr {
+  background-color: #E8C300;
+  border: 0.2em solid #E8C300;
+  border-radius: 1em;
+  width: 10%;
+}
+.About__solid-p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+.About__p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+.About__pic {
+  box-sizing: border-box;
+  position: relative;
+  width: 40%;
+}
+.About__pic--img {
+  width: 100%;
+}
+.About__pic--sq {
+  width: 100%;
+  position: absolute;
+  right: -35%;
 }/*# sourceMappingURL=index.css.map */

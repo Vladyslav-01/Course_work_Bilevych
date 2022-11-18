@@ -1,0 +1,50 @@
+.About {
+    width: 100%;
+    height: 40rem;
+    box-sizing: border-box;
+    display: flex;
+    padding: 5%;
+
+    &__text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3%;
+    }
+
+    &__h2 {
+        @include h2;
+    }
+
+    &__hr {
+        @include hr;
+        width: 10%;
+    }
+
+    &__solid-p {
+        @include p-solid;
+    }
+
+    &__p {
+        @include p;
+    }
+
+    &__pic {
+        box-sizing: border-box;
+        position: relative;
+        width: 40%;
+
+        &--img {
+            width: 100%;
+        }
+
+        &--sq {
+            width: 100%;
+            position: absolute;
+            right: -35%;
+        }
+    }
+}

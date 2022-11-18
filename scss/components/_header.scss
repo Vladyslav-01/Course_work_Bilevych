@@ -71,9 +71,7 @@ body {
     }
 
     &__hr {
-        background-color: $yellow;
-        border: 0.2em solid $yellow;
-        border-radius: 15%;
+        @include hr;
         width: 8%;
     }
 
