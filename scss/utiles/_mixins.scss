@@ -1,3 +1,12 @@
+@mixin name {
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2em;
+    letter-spacing: 0.7rem;
+}
+
 @mixin btn {
     background-color: $yellow;
     color: $white;

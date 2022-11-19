@@ -55,12 +55,7 @@ body {
     position: relative;
 
     &__name {
-        font-family: $open-sans;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.3em;
-        line-height: 2em;
-        letter-spacing: 0.5rem;
+        @include name;
     }
 
     &__title {
