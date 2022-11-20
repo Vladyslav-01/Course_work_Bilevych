@@ -7,6 +7,16 @@
     box-sizing: border-box;
     gap: 3%;
 
+    h2 {
+        @include h2;
+        text-transform: uppercase;
+    }
+
+    hr {
+        @include hr;
+        width: 30%;
+    }
+
     &__pic {}
 }
 

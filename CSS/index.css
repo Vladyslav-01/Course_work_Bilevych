@@ -377,6 +377,18 @@ body {
   box-sizing: border-box;
   gap: 3%;
 }
+.Book h2 {
+  font-family: "banny", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.Book hr {
+  background-color: #E8C300;
+  border: 0.2em solid #E8C300;
+  border-radius: 1em;
+  width: 30%;
+}
 .form-container {
   display: flex;
   flex-direction: column;
