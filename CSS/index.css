@@ -297,7 +297,6 @@ body {
 .Team {
   width: 100%;
   height: 40rem;
-  margin-bottom: 7%;
   background-image: url(../../images/Team-bg.png);
   color: #FFFFFF;
 }
@@ -312,12 +311,12 @@ body {
   padding-top: 3%;
 }
 .Team__pic {
+  box-sizing: border-box;
   width: 40%;
   position: relative;
 }
 .Team__img {
   width: 100%;
-  height: auto;
 }
 .Team__square {
   width: 38%;
@@ -333,6 +332,7 @@ body {
   box-sizing: border-box;
   gap: 3%;
   padding: 5% 0 5% 10%;
+  margin-bottom: 7%;
 }
 
 .Team-text {
@@ -377,6 +377,14 @@ body {
   box-sizing: border-box;
   gap: 3%;
 }
+.Book__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .Book h2 {
   font-family: "banny", sans-serif;
   font-size: 3rem;
@@ -389,7 +397,43 @@ body {
   border-radius: 1em;
   width: 30%;
 }
-.form-container {
+.Book__form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 40%;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5em;
+}
+.Book__form--item {
+  width: 49%;
+  box-sizing: border-box;
+  padding-left: 4%;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  border-radius: 0.3rem;
+  color: gray;
+}
+.Book__form--btn {
+  background-color: #E8C300;
+  color: #FFFFFF;
+  border-radius: 1em;
+  text-transform: uppercase;
+  width: 100%;
+  border: 1px #E8C300;
+  border-radius: 0.4em;
+}
+.Book__pic {
+  box-sizing: border-box;
+  position: relative;
+  width: 40%;
+}
+.Book__img {
+  width: 100%;
+}
+.Book__sq {
+  width: 38%;
+  position: absolute;
+  left: 70%;
+  padding-top: 28%;
 }/*# sourceMappingURL=index.css.map */

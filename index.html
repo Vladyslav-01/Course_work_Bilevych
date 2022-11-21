@@ -115,25 +115,38 @@
         </section>
 
         <section class="Book">
-            <div class="form-container">
+            <div class="Book__container">
                 <h2>book a table</h2>
 
                 <hr>
 
-                <form action=""></form>
+                <form action="#" method="get" enctype="multipart/form-data" class="Book__form">
+                    <input type="text" placeholder="Name" name="name" value="" class="Book__form--item">
+                    <input type="email" placeholder="Email" name="email" value="" class="Book__form--item">
+                    <input type="tel" placeholder="Phone" name="phone" value="" class="Book__form--item">
+                    <select name="people" class="Book__form--item" required>
+                        <option value="" disabled selected>People</option>
+                        <option value="1"></option>
+                    </select>
+                    <select name="people" class="Book__form--item" required>
+                        <option value="" disabled selected>Date</option>
+                        <option value="1"></option>
+                    </select>
+                    <select name="people" class="Book__form--item" required>
+                        <option value="" disabled selected>Time</option>
+                        <option value="1"></option>
+                    </select>
+                    <button class="Book__form--btn" type="submit">book now</button>
+                </form>
             </div>
             <div class="Book__pic">
-                <img src="./images/form-img.png" alt="clock">
-                <img src="./images/square.png" alt="square">
+                <img src="./images/form-img.png" alt="clock" class="Book__img">
+                <img src="./images/square.png" alt="square" class="Book__sq">
             </div>
 
             <!-- <span class="Book__schedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458
                 782</span> -->
         </section>
-
-        <!-- <span class="schedule">
-            Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782
-        </span> -->
 
         <section class="Spec">
             <h5 class="spec__title">SPECIALITIES</h5>
@@ -237,6 +250,7 @@
             </p>
 
             <form action="" class="Contact__form"></form>
+            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
         </section>
 
         <section class="Map">

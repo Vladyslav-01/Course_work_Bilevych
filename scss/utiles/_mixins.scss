@@ -38,3 +38,13 @@
     font-size: 1.2em;
     line-height: 1.4em;
 }
+
+@mixin field {
+    width: 49%;
+    box-sizing: border-box;
+    padding-left: 4%;
+    border: 1px solid $gray;
+    background-color: $gray;
+    border-radius: 0.3rem;
+    color: gray;
+}
