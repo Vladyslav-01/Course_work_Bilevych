@@ -1,0 +1,63 @@
+.Events {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__container {
+        width: 100%;
+        background-image: url(../../images/Events-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h2 {
+        @include name;
+        color: $white;
+    }
+
+    &__pic-container {
+        display: flex;
+    }
+
+    &__pic-1 {
+        width: 50%;
+        position: relative;
+
+        &--img {
+            width: 70%;
+        }
+
+        &--sq {
+            position: absolute;
+        }
+    }
+
+    &__pic-2 {
+        width: 50%;
+        position: relative;
+
+        &--img {
+            width: 70%;
+        }
+
+        &--sq {
+            position: absolute;
+        }
+    }
+
+    &__contacts {
+        color: $white;
+    }
+
+    &__gallery {
+        width: 100%;
+        display: flex;
+
+        img {
+            width: 25%;
+        }
+    }
+}

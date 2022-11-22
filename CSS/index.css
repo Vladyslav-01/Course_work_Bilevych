@@ -568,4 +568,61 @@ body {
   font-weight: 100;
   font-size: 0.8rem;
   color: gray;
+}
+
+.Events {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.Events__container {
+  width: 100%;
+  background-image: url(../../images/Events-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Events h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2em;
+  letter-spacing: 0.7rem;
+  color: #FFFFFF;
+}
+.Events__pic-container {
+  display: flex;
+}
+.Events__pic-1 {
+  width: 50%;
+  position: relative;
+}
+.Events__pic-1--img {
+  width: 70%;
+}
+.Events__pic-1--sq {
+  position: absolute;
+}
+.Events__pic-2 {
+  width: 50%;
+  position: relative;
+}
+.Events__pic-2--img {
+  width: 70%;
+}
+.Events__pic-2--sq {
+  position: absolute;
+}
+.Events__contacts {
+  color: #FFFFFF;
+}
+.Events__gallery {
+  width: 100%;
+  display: flex;
+}
+.Events__gallery img {
+  width: 25%;
 }/*# sourceMappingURL=index.css.map */
