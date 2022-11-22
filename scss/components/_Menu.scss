@@ -1,0 +1,62 @@
+.Menu {
+    width: 100%;
+    height: 50rem;
+    margin: 7% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+        @include h2;
+    }
+
+    hr {
+        @include hr;
+        width: 10%;
+    }
+
+    p {
+        @include p-solid;
+        width: 50%;
+        text-align: center;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+        width: 100%;
+
+        &--item {
+            border-right: 1px solid $gray;
+            padding: 3%;
+        }
+
+        :last-child {
+            border-right: none;
+        }
+    }
+
+    &__table {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 2rem 3rem;
+
+        &--item {
+            h4 {
+                font-family: $banny;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            span {
+                font-family: $banny;
+                font-weight: 100;
+                font-size: 0.8rem;
+                color: gray;
+            }
+        }
+    }
+}
