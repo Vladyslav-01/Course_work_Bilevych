@@ -11,19 +11,23 @@
         background-image: url(../../images/Events-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
+        padding-top: 3%;
     }
 
     h2 {
         @include name;
         color: $white;
+        font-size: 0.8rem;
     }
 
     &__pic-container {
         display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     &__pic-1 {
-        width: 50%;
+        width: 45%;
         position: relative;
 
         &--img {
@@ -32,11 +36,22 @@
 
         &--sq {
             position: absolute;
+            left: 3%;
+            padding-top: 20%;
+            width: 30%;
+        }
+
+        span {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: end;
+            // height: 49%;
+            color: $white;
         }
     }
 
     &__pic-2 {
-        width: 50%;
+        width: 45%;
         position: relative;
 
         &--img {
@@ -45,11 +60,28 @@
 
         &--sq {
             position: absolute;
+            padding-top: 20%;
+            width: 30%;
+            right: 5%;
+        }
+
+        span {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: end;
+            // height: 49%;
+            color: $white;
         }
     }
 
     &__contacts {
-        color: $white;
+        color: $light-gray;
+        font-weight: 100;
+        font-size: 0.7rem;
+
+        strong {
+            font-weight: 700;
+        }
     }
 
     &__gallery {

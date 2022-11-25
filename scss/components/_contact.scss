@@ -1,0 +1,24 @@
+.contact {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+
+
+    h2 {
+        @include h2;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    hr {
+        @include hr;
+        width: 30%;
+    }
+
+    p {
+        @include p;
+    }
+}

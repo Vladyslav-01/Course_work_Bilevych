@@ -8,6 +8,13 @@
 
     <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
 
+    <!-- <style>
+        section,
+        footer {
+            display: none;
+        }
+    </style> -->
+
     <link rel="stylesheet" href="./CSS/index.css">
 
     <title>Hungry People</title>
@@ -77,8 +84,8 @@
             </div>
 
             <div class="About__pic">
-                <img src="./images/about-img.png" alt="restaurant design" class="About__pic--img">
-                <img src="./images/square.png" alt="square" class="About__pic--sq">
+                <img src="./images/about-img.png" loading="lazy" alt="restaurant design" class="About__pic--img">
+                <img src="./images/square.png" loading="lazy" alt="square" class="About__pic--sq">
             </div>
         </section>
 
@@ -89,8 +96,8 @@
 
             <div class="Team-wrapper">
                 <div class="Team__pic">
-                    <img src="./images/Team-img.png" alt="chief" class="Team__img">
-                    <img src="./images/square.png" alt="square" class="Team__square">
+                    <img src="./images/Team-img.png" loading="lazy" alt="chief" class="Team__img">
+                    <img src="./images/square.png" loading="lazy" alt="square" class="Team__square">
                 </div>
                 <div class="Team-text">
                     <h2>MASTER CHEF</h2>
@@ -140,8 +147,8 @@
                 </form>
             </div>
             <div class="Book__pic">
-                <img src="./images/form-img.png" alt="clock" class="Book__img">
-                <img src="./images/square.png" alt="square" class="Book__sq">
+                <img src="./images/form-img.png" loading="lazy" alt="clock" class="Book__img">
+                <img src="./images/square.png" loading="lazy" alt="square" class="Book__sq">
             </div>
 
             <!-- <span class="Book__schedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458
@@ -154,8 +161,8 @@
             <div class="spec__wrapper">
 
                 <div class="spec__pic">
-                    <img src="./images/Spec-img.png" alt="dessert" class="spec__img">
-                    <img src="./images/square.png" alt="square" class="spec__square">
+                    <img src="./images/Spec-img.png" loading="lazy" alt="dessert" class="spec__img">
+                    <img src="./images/square.png" loading="lazy" alt="square" class="spec__square">
                 </div>
 
                 <div class="spec__text">
@@ -305,31 +312,32 @@
 
                 <div class="Events__pic-container">
                     <div class="Events__pic-1">
-                        <img src="./images/Events-img-1.png" class="Events__pic-1--img">
-                        <img src="./images/square.png" class="Events__pic-1--sq">
+                        <img src="./images/Events-img-1.png" loading="lazy" class="Events__pic-1--img">
+                        <img src="./images/square.png" loading="lazy" class="Events__pic-1--sq">
                         <span>weddings</span>
                     </div>
                     <div class="Events__pic-2">
-                        <img src="./images/Events-img-2.png" class="Events__pic-2--img">
-                        <img src="./images/square.png" class="Events__pic-2--sq">
                         <span>corporate parties</span>
+                        <img src="./images/Events-img-2.png" loading="lazy" class="Events__pic-2--img">
+                        <img src="./images/square.png" loading="lazy" class="Events__pic-2--sq">
                     </div>
                 </div>
 
                 <span class="Events__contacts">
-                    For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.
+                    For private events please call: <strong> +40 729 131 637/+40 726 458 782 </strong>or use the
+                    contact form.
                 </span>
 
             </div>
             <div class="Events__gallery">
-                <img src="./images/Events-img-3.png" alt="restaurant room">
-                <img src="./images/Events-img-4.png" alt="restaurant room">
-                <img src="./images/Events-img-5.png" alt="restaurant room">
-                <img src="./images/Events-img-6.png" alt="restaurant room">
+                <img src="./images/Events-img-3.png" loading="lazy" alt="restaurant room">
+                <img src="./images/Events-img-4.png" loading="lazy" alt="restaurant room">
+                <img src="./images/Events-img-5.png" loading="lazy" alt="restaurant room">
+                <img src="./images/Events-img-6.png" loading="lazy" alt="restaurant room">
             </div>
         </section>
 
-        <section class="Contact">
+        <section class="contact">
             <h2>contact</h2>
 
             <hr>
@@ -340,7 +348,10 @@
                 magna.
             </p>
 
-            <form action="#" class="Contact__form">
+            <form action="#" method="get" enctype="multipart/form-data" class="Contact__form">
+                <input type="text" placeholder="Name" name="name" value="" class="Book__form--item">
+                <input type="email" placeholder="Email" name="email" value="" class="Book__form--item">
+                <input type="tel" placeholder="Phone" name="phone" value="" class="Book__form--item">
                 <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
             </form>
 
