@@ -65,7 +65,7 @@ body {
         line-height: 140%;
     }
 
-    &__hr {
+    hr {
         @include hr;
         width: 8%;
     }

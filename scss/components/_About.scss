@@ -1,52 +1,50 @@
-.About {
+.about {
     width: 100%;
-    height: 40rem;
     display: flex;
     padding: 5% 0 5% 5%;
-    margin-bottom: 7%;
     box-sizing: border-box;
     gap: 3%;
 
-    &__text {
+    &__content {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
 
-    &__h2 {
-        @include h2;
-    }
+        h2 {
+            @include h2;
+        }
 
-    &__hr {
-        @include hr;
-        width: 10%;
-    }
+        hr {
+            @include hr;
+            width: 10%;
+        }
 
-    &__solid-p {
-        @include p-solid;
-    }
+        p {
+            @include p-solid;
+        }
 
-    &__p {
-        @include p;
+        :last-child {
+            @include p;
+        }
     }
 
     &__pic {
         box-sizing: border-box;
         position: relative;
         width: 40%;
+    }
 
-        &--img {
-            width: 100%;
-        }
+    &__pic-img {
+        width: 100%;
+    }
 
-        &--sq {
-            width: 38%;
-            position: absolute;
-            left: 70%;
-            padding-top: 28%;
-        }
+    &__pic-sq {
+        width: 38%;
+        position: absolute;
+        left: 70%;
+        padding-top: 28%;
     }
 }
