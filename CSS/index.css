@@ -671,11 +671,27 @@ body {
 }
 .contact p {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 1.2em;
+  font-weight: 700;
+  font-size: 1.6em;
   line-height: 1.4em;
+  padding: 0 25%;
+  text-align: center;
 }
-
+.contact__form {
+  padding: 0 20%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 1fr;
+}
+.contact__form-item {
+  width: 49%;
+  box-sizing: border-box;
+  padding-left: 4%;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  border-radius: 0.3rem;
+  color: gray;
+}
 .footer {
   width: 100%;
   min-height: 15vh;

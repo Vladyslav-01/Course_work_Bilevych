@@ -17,6 +17,21 @@
     }
 
     p {
-        @include p;
+        @include p-solid;
+        padding: 0 25%;
+        text-align: center;
     }
+
+    &__form {
+        padding: 0 20%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr, 1fr;
+    }
+
+    &__form-item {
+        @include field;
+    }
+
+    &__form-textarea {}
 }
