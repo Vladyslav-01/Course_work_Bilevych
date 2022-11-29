@@ -7,6 +7,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
     background-image: url(../../images/header-bg.png);
     background-repeat: round;
     background-size: 100%;
@@ -20,17 +21,77 @@ body {
     align-items: flex-start;
     color: $white;
 
+    @media screen and (max-width: 1180px) {
+        padding: 0 1%;
+    }
+
+    @media screen and (max-width: 860px) {
+        justify-content: space-between;
+    }
+
     &__item {
         font-family: $open-sans;
         font-style: normal;
         font-size: 1.2em;
         line-height: 18px;
         padding-top: 3%;
+
+        @media screen and (max-width: 860px) {
+            display: none;
+        }
     }
 
     &__logo {
         padding-top: 2%;
         width: 10%;
+
+        @media screen and (max-width: 860px) {
+            padding-left: 45%;
+        }
+    }
+
+    &__burger {
+        display: none;
+        width: 3.5rem;
+        position: relative;
+        margin: 4% 3%;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        span {
+            display: block;
+            position: absolute;
+            height: 9px;
+            width: 100%;
+            background: $yellow;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        span:nth-child(1) {
+            top: 0px;
+        }
+
+        span:nth-child(2) {
+            top: 18px;
+        }
+
+        span:nth-child(3) {
+            top: 36px;
+        }
+
+        @media screen and (max-width: 860px) {
+            display: block;
+            margin-right: 3%;
+        }
+
+        @media screen and (max-width: 470px) {
+            width: 12%;
+        }
     }
 }
 
@@ -41,6 +102,7 @@ body {
     width: 100%;
     margin: 10% 5% 13% 5%;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .hero-schedule {
@@ -63,6 +125,12 @@ body {
         text-transform: uppercase;
         font-size: 8rem;
         line-height: 140%;
+
+        @media screen and (max-width: 860px) {
+            font-size: 4rem;
+            line-height: 100%;
+            padding: 0 1%;
+        }
     }
 
     hr {
@@ -83,7 +151,21 @@ body {
         @include btn;
         width: 25%;
         height: 100%;
-        line-height: 400%
+        line-height: 400%;
+
+        @media screen and (max-width: 1180px) {
+            height: 50%;
+            line-height: 300%;
+        }
+
+        @media screen and (max-width: 860px) {
+            height: 70%;
+            line-height: 300%;
+        }
+
+        @media screen and (max-width: 470px) {
+            width: 35%;
+        }
     }
 
     &__btn-2 {
@@ -93,6 +175,20 @@ body {
         line-height: 400%;
         background: transparent;
         border: 1px solid gray;
+
+        @media screen and (max-width: 1180px) {
+            height: 50%;
+            line-height: 300%;
+        }
+
+        @media screen and (max-width: 860px) {
+            height: 70%;
+            line-height: 300%;
+        }
+
+        @media screen and (max-width: 470px) {
+            width: 35%;
+        }
     }
 
     &__arrow {
@@ -102,6 +198,14 @@ body {
         position: absolute;
         left: 47.5%;
         bottom: -40%;
+
+        @media screen and (max-width: 1180px) {
+            bottom: -15%;
+        }
+
+        @media screen and (max-width: 470px) {
+            bottom: -5%;
+        }
     }
 }
 
@@ -113,5 +217,9 @@ body {
     &__icon {
         width: 70%;
         padding: 6% 0;
+
+        @media screen and (max-width: 470px) {
+            width: 150%;
+        }
     }
 }
