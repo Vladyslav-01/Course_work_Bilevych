@@ -47,7 +47,14 @@
 
         div {
             width: 50%;
-            font-size: 0.5rem;
+            padding-right: 1%;
+            box-sizing: border-box;
+            display: flex;
+            // flex-wrap: wrap;
+            align-items: center;
+            gap: 0 0.3em;
+            font-weight: 700;
+            color: $contact-gray;
         }
 
         button {
@@ -61,10 +68,13 @@
         }
     }
 
+    &__contacts-item {
+        font-size: 0.9rem;
+    }
 
-    // &__contacts-item {
-
-    // }
+    &__contacts-img {
+        width: 10%;
+    }
 
     &__frame {
         width: 100%;
