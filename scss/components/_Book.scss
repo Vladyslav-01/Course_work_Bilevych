@@ -1,8 +1,7 @@
 .book {
     width: 100%;
     display: flex;
-    padding: 5% 0 5% 5%;
-    margin-bottom: 7%;
+    padding: 5% 0 1% 5%;
     box-sizing: border-box;
     gap: 3%;
 
@@ -62,5 +61,17 @@
         position: absolute;
         left: 70%;
         padding-top: 28%;
+    }
+}
+
+.schedule {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: $contact-gray;
+
+    &>strong {
+        font-weight: 700;
     }
 }

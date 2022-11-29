@@ -11,8 +11,7 @@
         display: flex;
         box-sizing: border-box;
         gap: 3%;
-        padding: 5% 0 5% 10%;
-        margin-bottom: 7%;
+        padding: 5% 0 0 10%;
     }
 
     &__title {
@@ -45,6 +44,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        box-sizing: border-box;
         gap: 1em;
 
         h2 {
@@ -66,29 +66,34 @@
         }
     }
 
-    // &__map {
-    //     margin-top: 1em;
+    &__map {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 4em;
+        padding-top: 2em;
 
-    //     &>button {
-    //         all: unset;
-    //         background: lighten($yellow, 10);
-    //         cursor: pointer;
-    //         margin: 0 0.125em;
-    //         position: relative;
-    //         user-select: none;
-    //         @include circle(1em);
+        &>button {
+            all: unset;
+            background: lighten($light-gray, 10);
+            cursor: pointer;
+            margin: 0 0.125em;
+            position: relative;
+            user-select: none;
+            @include circle(1em);
 
-    //         &.active {
-    //             &:after {
-    //                 background: $white;
-    //                 content: "";
-    //                 left: 50%;
-    //                 position: absolute;
-    //                 transform: translate(-50%, -50%);
-    //                 top: 50%;
-    //                 @include circle(0.5em);
-    //             }
-    //         }
-    //     }
-    // }
+            &.active {
+                &:after {
+                    background: $white;
+                    content: "";
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                    @include circle(0.5em);
+                }
+            }
+        }
+    }
 }
