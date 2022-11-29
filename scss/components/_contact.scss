@@ -1,9 +1,10 @@
 .contact {
     width: 100%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3%;
+    gap: 1rem;
 
 
     h2 {
@@ -23,15 +24,50 @@
     }
 
     &__form {
-        padding: 0 20%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr, 1fr;
+        margin: 3% 10% 5% 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.8em 0;
+
+        input {
+            @include field;
+            width: 33%;
+            height: 4rem;
+            font-size: 1rem;
+        }
+
+        textarea {
+            @include field;
+            width: 100%;
+            height: 8rem;
+            padding-top: 2%;
+            font-size: 1rem;
+        }
+
+        div {
+            width: 50%;
+            font-size: 0.5rem;
+        }
+
+        button {
+            width: 50%;
+            height: 4rem;
+            border-radius: 0.2em;
+            border: 1px solid $yellow;
+            background-color: $yellow;
+            color: $white;
+            font-size: 1rem;
+        }
     }
 
-    &__form-item {
-        @include field;
-    }
 
-    &__form-textarea {}
+    // &__contacts-item {
+
+    // }
+
+    &__frame {
+        width: 100%;
+        height: 35rem;
+    }
 }
