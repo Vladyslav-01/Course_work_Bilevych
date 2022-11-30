@@ -6,10 +6,13 @@
     align-items: center;
     gap: 1rem;
 
-
     h2 {
         @include h2;
         text-transform: uppercase;
+
+        @media screen and (max-width: 1180px) {
+            font-size: 2rem;
+        }
     }
 
     hr {
@@ -21,6 +24,14 @@
         @include p-solid;
         padding: 0 25%;
         text-align: center;
+
+        @media screen and (max-width: 1180px) {
+            font-size: 1.3rem;
+        }
+
+        @media screen and (max-width: 870px) {
+            padding: 0 10%;
+        }
     }
 
     &__form {
@@ -35,6 +46,10 @@
             width: 33%;
             height: 4rem;
             font-size: 1rem;
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
         }
 
         textarea {
@@ -50,12 +65,21 @@
             padding-right: 1%;
             box-sizing: border-box;
             display: flex;
-            // flex-wrap: wrap;
             align-items: center;
             gap: 0 0.3em;
             font-weight: 700;
             color: $contact-gray;
+
+            @media screen and (max-width: 1180px) {
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
         }
+
 
         button {
             width: 50%;
@@ -65,6 +89,11 @@
             background-color: $yellow;
             color: $white;
             font-size: 1rem;
+
+            @media screen and (max-width: 1180px) {
+                width: 100%;
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -79,5 +108,33 @@
     &__frame {
         width: 100%;
         height: 35rem;
+
+        @media screen and (max-width: 470px) {
+            height: 20rem;
+        }
+    }
+
+    &__contacts-adaptive {
+        display: none;
+
+        @media screen and (max-width: 700px) {
+            display: block;
+            width: 100%;
+            padding: 5% 10%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            flex-wrap: wrap;
+            gap: 0 0.3em;
+            font-weight: 700;
+            color: $contact-gray;
+        }
+    }
+
+    &__contacts-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 }
