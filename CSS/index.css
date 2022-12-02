@@ -130,7 +130,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background-image: url(../../images/header-bg.png);
+  background-image: url(../images/header-bg.png);
   background-repeat: round;
   background-size: 100%;
 }
@@ -436,7 +436,7 @@ body {
 
 .team {
   width: 100%;
-  background-image: url(../../images/Team-bg.png);
+  background-image: url(../images/Team-bg.png);
   color: #FFFFFF;
 }
 .team__head {
@@ -644,7 +644,7 @@ body {
 
 .spec {
   width: 100%;
-  background-image: url(../../images/Team-bg.png);
+  background-image: url(../images/Team-bg.png);
   color: #FFFFFF;
   position: relative;
 }
@@ -879,7 +879,7 @@ body {
 }
 .events__container {
   width: 100%;
-  background-image: url(../../images/Events-bg.png);
+  background-image: url(../images/Events-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 3%;
